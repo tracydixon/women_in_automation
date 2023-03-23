@@ -1,0 +1,33 @@
+{
+  "version": "2.0",
+  "resources": [
+    {
+      "resource": "asset",
+      "value": {
+        "name": {
+          "defaultValue": "in_config(\"smtp_credential\").ToString",
+          "isExpression": false
+        },
+        "folderPath": {
+          "defaultValue": "in_config(\"process_folder\").ToString",
+          "isExpression": false
+        }
+      },
+      "metadata": {}
+    },
+    {
+      "resource": "Connection",
+      "key": "uipath-microsoft-outlook365ews",
+      "value": {
+        "ConnectionId": {
+          "defaultValue": "e56f9781-23f6-ec11-b47a-501ac56bcbc8",
+          "isExpression": false
+        }
+      },
+      "metadata": {
+        "UseConnectionService": "True",
+        "Connector": "uipath-microsoft-outlook365ews"
+      }
+    }
+  ]
+}
